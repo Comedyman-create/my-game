@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>My Game</title>
-</head>
-<body style="margin:0; overflow:hidden;">
 
-<canvas id="game"></canvas>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>My Game</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    canvas {
+      border: 2px solid #333;
+
+      /* ВАЖНО — убирает мыло */
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+  </style>
+
+</head>
+<body>
+
+<canvas id="game" width="800" height="600"></canvas>
 
 <script src="game.js"></script>
 

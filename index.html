@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-
-<html lang="ru">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Game</title>
+    <meta charset="UTF-8">
+    <title>My Game</title>
 
-  <style>
-    body {
-      margin: 0;
-      background: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+    <style>
+        body {
+            margin: 0;
+            background: black;
+        }
 
-    canvas {
-      border: 2px solid #333;
-
-      /* ВАЖНО — убирает мыло */
-      image-rendering: pixelated;
-      image-rendering: crisp-edges;
-    }
-  </style>
-
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background: #111;
+        }
+    </style>
 </head>
+
 <body>
 
-<canvas id="game" width="800" height="600"></canvas>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
 
 <script src="game.js"></script>
 
